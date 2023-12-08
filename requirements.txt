@@ -1,4 +1,4 @@
 justpy==0.1.5
 pandas==1.2.0
 uvicorn==0.13.3
-demjson==2.2.4
+setuptools<58.0.0
