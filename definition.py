@@ -3,7 +3,7 @@ import pandas
 class Defination:
 
     def __init__(self, term):
-        self.term = term.strip()
+        self.term = term.strip().lower()
 
     def get(self):
         df = pandas.read_csv("data.csv")

@@ -1,5 +1,6 @@
 import justpy as jp
 import definition
+from webapp import layout
 
 class Dictionary:
 
@@ -8,7 +9,12 @@ class Dictionary:
     @classmethod  # is used as self becomes a ticking bomb later as jp changes it to request
     def serve(cls, req):
         wp  = jp.QuasarPage(tailwind=True)
-        div = jp.Div(a=wp, classes="bg-gray-300 h-screen")
+
+        lay = layout.DefaultLayout(
+            a=wp)  # view="hHh lpR fFf" is made static in layout page
+        container = jp.QPageContainer(a=lay)
+
+        div = jp.Div(a=container, classes="bg-gray-300 h-screen")
         jp.Div(a=div, text="Instant Dictionry", classes="text-4xl m2")
         jp.Div(a=div, text="Get the definition of any English word you type.", classes="text-1xl m-3")
         input_div= jp.Div(a=div, classes="grid grid-cols-2")
