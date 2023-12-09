@@ -1,3 +1,4 @@
 uvicorn==0.24.0.post1
 justpy==0.14.0
+pandas==2.0.3
 
