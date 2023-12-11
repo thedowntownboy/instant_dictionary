@@ -1,4 +1,5 @@
 import justpy as jp
+import uvicorn
 
 app = jp.app 
 
