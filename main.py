@@ -1,5 +1,7 @@
 import justpy as jp
 
+app = jp.app 
+
 from webapp.about import About
 from webapp.dictionary import Dictionary
 from webapp.home import Home
@@ -7,5 +9,5 @@ from webapp.home import Home
 jp.Route(About.path, About.serve)
 jp.Route(Home.path, Home.serve)
 jp.Route(Dictionary.path, Dictionary.serve)
-jp.justpy()
+jp.justpy(start_server=False)
 
