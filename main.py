@@ -9,5 +9,4 @@ app = jp.app
 jp.Route(About.path, About.serve)
 jp.Route(Home.path, Home.serve)
 jp.Route(Dictionary.path, Dictionary.serve)
-jp.justpy(start_server=False)
-uvicorn.run(app)
+
